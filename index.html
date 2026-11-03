@@ -30,7 +30,7 @@ footer{padding:25px 0;color:#777;font-size:11px}.footer-row{display:flex;justify
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 .timeline-scroll{overflow:visible}
 .timeline{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;min-width:0}
-.timeline::before{content:"";position:absolute;z-index:0;top:84px;left:6px;right:6px;height:1px;background:linear-gradient(90deg,rgba(217,119,50,.35),rgba(240,146,75,.72),rgba(217,119,50,.35))}
+.timeline::before{content:"";position:absolute;z-index:0;top:84px;left:6px;right:calc(20% - 25px);height:1px;background:linear-gradient(90deg,rgba(217,119,50,.35),rgba(240,146,75,.72),rgba(217,119,50,.35))}
 .timeline .job{position:relative;z-index:1;min-width:0;padding:0;border:0}
 .timeline .job h3{min-height:40px;margin:0 0 7px;font-size:15px;line-height:1.25}
 .job-year{min-height:20px;margin:0 0 8px;color:var(--accent-bright);font-size:11px;font-weight:650;letter-spacing:.04em}

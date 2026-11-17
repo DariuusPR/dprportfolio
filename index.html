@@ -44,9 +44,14 @@ footer{padding:25px 0;color:#777;font-size:11px}.footer-row{display:flex;justify
 .timeline .job p{margin:0;color:#aaa;font-size:12px;line-height:1.55}
 @media(max-width:1100px){.timeline-scroll{overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;padding-bottom:14px;scrollbar-color:rgba(240,146,75,.4) transparent;scrollbar-width:thin}.timeline{min-width:1000px}.job-marker{margin-bottom:12px}.job-tooltip{position:static;display:none;width:fit-content;max-width:100%;margin:7px 0 0;background:rgba(217,119,50,.08);box-shadow:none;transform:none;visibility:visible;opacity:1}.job-marker:hover .job-tooltip,.job-marker:focus-within .job-tooltip{display:inline-flex;transform:none}}
 </style>
+<style>
+.header-actions{display:flex;align-items:center;gap:8px}.language-switch{display:flex;align-items:center;gap:3px}.language-button{display:inline-flex;align-items:center;justify-content:center;gap:3px;min-width:38px;min-height:38px;padding:0 6px;border:1px solid var(--line);border-radius:3px;background:rgba(255,255,255,.045);color:var(--white);font-size:12px;cursor:pointer;transition:border-color .2s ease,background .2s ease}.language-button:hover,.language-button[aria-pressed="true"]{border-color:var(--accent-bright);background:rgba(217,119,50,.13)}.language-code{font-size:9px;font-weight:750;letter-spacing:.04em}
+@media(max-width:760px){.header-actions{gap:5px}.language-button{min-width:34px;min-height:34px;padding:0 4px}.language-code{display:none}}
+@media(max-width:420px){.nav{gap:5px}.brand{font-size:11px}.header-actions{gap:4px}.cv-link{padding:0 8px;font-size:7px}.language-switch{gap:2px}.language-button{min-width:30px;min-height:32px;padding:0 3px}}
+</style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#inicio">DÁRIO POMA <span>RAMIREZ</span></a><a class="cv-link" href="Dario-Poma-Ramirez-CV.pdf" target="_blank" rel="noopener" aria-label="Visualizar currículo em PDF, abre em nova aba">Visualizar CV</a><nav id="nav"><a href="#trabalhos">Trabalhos</a><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#competencias">Competências</a><a href="#contato">Contato</a></nav><button class="menu" id="menu" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">MENU</button></div></header>
+<header><div class="wrap nav"><a class="brand" href="#inicio">DÁRIO POMA <span>RAMIREZ</span></a><div class="header-actions"><a class="cv-link" href="Dario-Poma-Ramirez-CV.pdf" target="_blank" rel="noopener" aria-label="Visualizar currículo em PDF, abre em nova aba">Visualizar CV</a><div class="language-switch" role="group" aria-label="Selecionar idioma"><button class="language-button" type="button" data-language="pt-BR" aria-label="Português do Brasil" aria-pressed="true"><span aria-hidden="true">🇧🇷</span><span class="language-code">PT</span></button><button class="language-button" type="button" data-language="en-US" aria-label="American English" aria-pressed="false"><span aria-hidden="true">🇺🇸</span><span class="language-code">EN</span></button></div></div><nav id="nav"><a href="#trabalhos">Trabalhos</a><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#competencias">Competências</a><a href="#contato">Contato</a></nav><button class="menu" id="menu" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">MENU</button></div></header>
 <main>
 <section class="hero" id="inicio"><div class="wrap"><div class="kicker">Portfólio profissional · 2026</div><h1>IMAGENS QUE<br><em>CONTAM</em> HISTÓRIAS.</h1><p class="balanced-copy"><span>Motion Designer &amp; Produtor Audiovisual.</span><span>Transformo ideias em experiências visuais por meio de design, movimento e narrativa audiovisual.</span></p><div class="hero-actions"><a class="btn primary" href="#trabalhos">Explorar projetos &#x2198;&#xFE0E;</a><a class="btn" href="mailto:dariod2rpoma@gmail.com">Entrar em Contato</a></div></div><div class="hero-index">MOTION DESIGN · AUDIOVISUAL · DESIGN</div></section>
 
@@ -98,6 +103,165 @@ footer{padding:25px 0;color:#777;font-size:11px}.footer-row{display:flex;justify
 <section class="contact" id="contato"><div class="wrap"><div class="eyebrow">06 / Contato</div><h2>SEU PRÓXIMO PROJETO<br>COMEÇA AQUI!</h2><p class="balanced-copy">Disponível para projetos, parcerias e novas oportunidades em design, motion e produção audiovisual.</p><div class="hero-actions"><a class="btn primary" href="mailto:dariod2rpoma@gmail.com">Enviar e-mail &#x2197;&#xFE0E;</a></div></div></section>
 </main>
 <footer><div class="wrap footer-row"><span>© 2026 Dário Poma Ramirez</span><span>Motion Designer & Produtor Audiovisual · São Paulo, SP</span></div></footer>
+<script>
+const portfolioTranslations={
+"Visualizar CV":"View Résumé",
+"Trabalhos":"Work",
+"Sobre":"About",
+"Experiência":"Experience",
+"Competências":"Skills",
+"Contato":"Contact",
+"Portfólio profissional · 2026":"Professional Portfolio · 2026",
+"IMAGENS QUE":"IMAGES THAT",
+"CONTAM":"TELL",
+"HISTÓRIAS.":"STORIES.",
+"Motion Designer & Produtor Audiovisual.":"Motion Designer & Audiovisual Producer.",
+"Transformo ideias em experiências visuais por meio de design, movimento e narrativa audiovisual.":"I turn ideas into visual experiences through design, motion, and audiovisual storytelling.",
+"Explorar projetos":"Explore Projects",
+"Entrar em Contato":"Get in Touch",
+"MOTION DESIGN · AUDIOVISUAL · DESIGN":"MOTION DESIGN · AUDIOVISUAL · DESIGN",
+"01 / Seleção de projetos":"01 / Project Selection",
+"Seleção de projetos":"Project Selection",
+"TRABALHOS":"SELECTED",
+"EM DESTAQUE.":"WORK.",
+"Uma seleção de produções audiovisuais,":"A selection of audiovisual productions,",
+"conteúdos digitais e projetos criativos.":"digital content, and creative projects.",
+"Link de Cases":"Case Studies",
+"Produção audiovisual":"Audiovisual Production",
+"Assistir no YouTube":"Watch on YouTube",
+"Motion & conteúdo digital":"Motion & Digital Content",
+"Ver publicação":"View Post",
+"Conteúdo audiovisual":"Audiovisual Content",
+"Assistir":"Watch",
+"Perfil profissional":"Professional Profile",
+"02 / Perfil profissional":"02 / Professional Profile",
+"CRIATIVIDADE":"CREATIVITY",
+"COM PROPÓSITO.":"WITH PURPOSE.",
+"Profissional criativo multidisciplinar com trajetória em design gráfico, motion design e produção audiovisual.":"Multidisciplinary creative professional with a background in graphic design, motion design, and audiovisual production.",
+"Experiência no desenvolvimento de campanhas publicitárias, conteúdos digitais, cobertura de eventos e produções para diferentes marcas e plataformas.":"Experienced in developing advertising campaigns, digital content, event coverage, and productions for a variety of brands and platforms.",
+"Atuação em todas as etapas da produção audiovisual, da concepção e roteirização à captação, edição e finalização, integrando técnica, narrativa e identidade visual.":"I work across every stage of audiovisual production—from concept and scripting to filming, editing, and final delivery—bringing together craft, storytelling, and visual identity.",
+"Trajetória profissional":"Career experience",
+"Da ideia à finalização":"From concept to final delivery",
+"Trajetória":"Career",
+"03 / Trajetória":"03 / Career",
+"EXPERIÊNCIA":"PROFESSIONAL",
+"PROFISSIONAL.":"EXPERIENCE.",
+"Experiências em criação, comunicação,":"Experience in creative work, communications,",
+"produção audiovisual e educação criativa.":"audiovisual production, and creative education.",
+"Microcamp":"Microcamp",
+"Professor de Design Gráfico e Desenvolvimento de Jogos":"Graphic Design and Game Development Instructor",
+"Ensino de design gráfico e desenvolvimento de jogos em ambientes 2D e 3D, com orientação prática sobre ferramentas criativas e produção digital.":"Taught graphic design and 2D/3D game development, with hands-on guidance in creative tools and digital production.",
+"Designer Gráfico & Social Media":"Graphic Designer & Social Media Specialist",
+"Desenvolvimento de peças gráficas, conteúdos digitais, materiais institucionais e publicações para redes sociais.":"Created graphic assets, digital content, institutional materials, and social media posts.",
+"Produtor & Cinegrafista":"Producer & Videographer",
+"Captação, operação e produção audiovisual para transmissões ao vivo e conteúdos jornalísticos.":"Filmed, operated, and produced audiovisual content for live broadcasts and news coverage.",
+"Edição, sonorização, podcasts e conteúdos digitais.":"Editing, sound design, podcasts, and digital content.",
+"Produção audiovisual freelance":"Freelance Audiovisual Production",
+"Produção Audiovisual Freelance":"Freelance Audiovisual Production",
+"Projetos para Audi Morumbi, Flávia Lombard, Dunguinhas Burguer e Auto Escola Star Fox.":"Projects for Audi Morumbi, Flávia Lombard, Dunguinhas Burguer, and Auto Escola Star Fox.",
+"Planejamento, captação, direção, edição e finalização de conteúdos comerciais e institucionais, incluindo gravações externas e drone.":"Planned, filmed, directed, edited, and delivered commercial and institutional content, including location and drone shoots.",
+"Motion Designer":"Motion Designer",
+"Desenvolvimento de criativos estáticos e animados para campanhas publicitárias, redes sociais e mídia paga.":"Created static and animated assets for advertising campaigns, social media, and paid media.",
+"Produção de vídeos, animações, apresentações e materiais institucionais.":"Produced videos, animations, presentations, and institutional materials.",
+"Especialidades":"Specialties",
+"04 / Especialidades":"04 / Specialties",
+"COMPETÊNCIAS":"SKILLS",
+"& FERRAMENTAS.":"& TOOLS.",
+"Recursos criativos e técnicos aplicados":"Creative and technical skills",
+"a diferentes formatos e objetivos de comunicação.":"for a range of formats and communication goals.",
+"Design & Motion":"Design & Motion",
+"Design gráfico · Motion design · Identidade visual ·":"Graphic design · Motion design · Visual identity ·",
+"Animação · Peças publicitárias.":"Animation · Advertising assets.",
+"Produção Audiovisual":"Audiovisual Production",
+"Roteirização · Captação de imagens · Direção ·":"Scripting · Filming · Directing ·",
+"Edição de vídeo · Sonorização · Transmissões ao vivo ·":"Video editing · Sound design · Live streaming ·",
+"Captação com drone · Otimização via IA.":"Drone filming · AI-assisted optimization.",
+"Produção Multiplataforma":"Multiplatform Production",
+"Campanhas digitais, conteúdos para redes sociais,":"Digital campaigns, social media content,",
+"mídia paga, materiais institucionais":"paid media, institutional materials,",
+"e comunicação de marca.":"and brand communications.",
+"Formação":"Education",
+"05 / Formação":"05 / Education",
+"FORMAÇÃO &":"EDUCATION &",
+"CAPACITAÇÃO.":"TRAINING.",
+"Estudos e cursos que compõem minha trajetória":"Studies and courses that have shaped my",
+"profissional e criativa.":"professional and creative journey.",
+"Produção Audiovisual — Porta dos Fundos":"Audiovisual Production — Porta dos Fundos",
+"2026 · Roteirização, direção, fotografia e edição.":"2026 · Scripting, directing, cinematography, and editing.",
+"Bacharelado em Teologia — ITEPA Bible College":"Bachelor of Theology — ITEPA Bible College",
+"2023 — 2026 · 27 módulos informados no currículo.":"2023 — 2026 · 27 modules completed, as listed on my résumé.",
+"Jogos Digitais — FMU":"Digital Games — FMU",
+"2018 — 2020 · Roteiro, Unity, C#, HTML, CSS e Java.":"2018 — 2020 · Scripting, Unity, C#, HTML, CSS, and Java.",
+"Edição e Pós-Produção Audiovisual — Cursos Livres":"Audiovisual Editing & Post-Production — Continuing Education",
+"2016 — 2019 · After Effects, Premiere Pro e Audition.":"2016 — 2019 · After Effects, Premiere Pro, and Audition.",
+"Desenvolvimento de Jogos — Microcamp":"Game Development — Microcamp",
+"2015 — 2017 · Unreal Engine, Maya, 2D e 3D.":"2015 — 2017 · Unreal Engine, Maya, 2D, and 3D.",
+"Idiomas":"Languages",
+"06 / Contato":"06 / Contact",
+"Inglês intermediário.":"Intermediate English.",
+"SEU PRÓXIMO PROJETO":"YOUR NEXT PROJECT",
+"COMEÇA AQUI!":"STARTS HERE!",
+"Disponível para projetos, parcerias e novas oportunidades em design, motion e produção audiovisual.":"Available for projects, partnerships, and new opportunities in design, motion, and audiovisual production.",
+"Enviar e-mail":"Send an Email",
+"Motion Designer & Produtor Audiovisual · São Paulo, SP":"Motion Designer & Audiovisual Producer · São Paulo, Brazil"
+};
+const portfolioAttributeTranslations={
+"aria-label":{
+"Visualizar currículo em PDF, abre em nova aba":"View résumé as a PDF; opens in a new tab",
+"Selecionar idioma":"Select language",
+"Português do Brasil":"Brazilian Portuguese",
+"Abrir menu":"Open menu",
+"Link de Cases da Control F5 (abre em nova aba)":"Control F5 case studies link (opens in a new tab)",
+"Experiência profissional em ordem cronológica":"Professional experience in chronological order",
+"Cargo: Professor de Design Gráfico e Desenvolvimento de Jogos":"Position: Graphic Design and Game Development Instructor",
+"Cargo: Designer Gráfico e Social Media":"Position: Graphic Designer & Social Media Specialist",
+"Cargo: Produtor e Cinegrafista":"Position: Producer & Videographer",
+"Cargo: Produção audiovisual freelance":"Position: Freelance Audiovisual Producer",
+"Cargo: Motion Designer":"Position: Motion Designer"
+},
+"title":{
+"Audi — vídeo 01":"Audi — Video 1",
+"Audi — vídeo 02":"Audi — Video 2",
+"Control F5 — vídeo 01 em destaque":"Control F5 — Featured Video 1",
+"AMIG — vídeo 01":"AMIG — Video 1"
+}
+};
+const portfolioLanguageButtons=document.querySelectorAll('.language-button');
+const portfolioTextNodes=[];
+const portfolioTextWalker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+while(portfolioTextWalker.nextNode())portfolioTextNodes.push({node:portfolioTextWalker.currentNode,original:portfolioTextWalker.currentNode.nodeValue});
+const portfolioAttributes=[];
+document.querySelectorAll('[aria-label], [title]').forEach(element=>{
+['aria-label','title'].forEach(attribute=>{
+if(element.hasAttribute(attribute))portfolioAttributes.push({element,attribute,original:element.getAttribute(attribute)});
+});
+});
+const portfolioArrow=/\s*[↗↘](?:\uFE0E)?$/;
+function setPortfolioLanguage(language){
+const english=language==='en-US';
+document.documentElement.lang=language;
+document.title=english?'Dário Poma Ramirez — Motion Designer & Audiovisual Producer':'Dário Poma Ramirez — Motion Designer & Produtor Audiovisual';
+document.querySelector('meta[name="description"]').content=english?'Portfolio of Dário Poma Ramirez — Motion Designer and Audiovisual Producer.':'Portfólio de Dário Poma Ramirez — Motion Designer e Produtor Audiovisual.';
+portfolioTextNodes.forEach(({node,original})=>{
+const trimmed=original.trim();
+if(!english){node.nodeValue=original;return;}
+const arrow=trimmed.match(portfolioArrow)?.[0]||'';
+const key=arrow?trimmed.slice(0,-arrow.length).trim():trimmed;
+const translated=portfolioTranslations[key];
+if(translated)node.nodeValue=original.replace(trimmed,translated+(arrow?' '+arrow.trim():''));
+});
+portfolioAttributes.forEach(({element,attribute,original})=>{
+const translated=english?portfolioAttributeTranslations[attribute]?.[original]:null;
+element.setAttribute(attribute,translated||original);
+});
+portfolioLanguageButtons.forEach(button=>{
+button.setAttribute('aria-pressed',String(button.dataset.language===language));
+});
+localStorage.setItem('portfolio-language',language);
+}
+portfolioLanguageButtons.forEach(button=>button.addEventListener('click',()=>setPortfolioLanguage(button.dataset.language)));
+setPortfolioLanguage(localStorage.getItem('portfolio-language')==='en-US'?'en-US':'pt-BR');
+</script>
 <script>
 const menu=document.getElementById('menu'),nav=document.getElementById('nav');
 menu.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(isOpen));});

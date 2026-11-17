@@ -371,6 +371,7 @@ const translations=language==='en-US'?portfolioTranslations:language==='es-ES'?p
 document.documentElement.lang=language;
 document.title=language==='en-US'?'Dário Poma Ramirez — Motion Designer & Audiovisual Producer':language==='es-ES'?'Dário Poma Ramirez — Motion Designer y Productor Audiovisual':'Dário Poma Ramirez — Motion Designer & Produtor Audiovisual';
 document.querySelector('meta[name="description"]').content=language==='en-US'?'Portfolio of Dário Poma Ramirez — Motion Designer and Audiovisual Producer.':language==='es-ES'?'Portafolio de Dário Poma Ramirez — Motion Designer y productor audiovisual.':'Portfólio de Dário Poma Ramirez — Motion Designer e Produtor Audiovisual.';
+document.querySelector('.cv-link').href=language==='en-US'?'Dario-Poma-Ramirez-CV-EN.pdf':language==='es-ES'?'Dario-Poma-Ramirez-CV-ES.pdf':'Dario-Poma-Ramirez-CV.pdf';
 portfolioTextNodes.forEach(({node,original})=>{
 const trimmed=original.trim();
 const arrow=trimmed.match(portfolioArrow)?.[0]||'';

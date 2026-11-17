@@ -45,13 +45,13 @@ footer{padding:25px 0;color:#777;font-size:11px}.footer-row{display:flex;justify
 @media(max-width:1100px){.timeline-scroll{overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;padding-bottom:14px;scrollbar-color:rgba(240,146,75,.4) transparent;scrollbar-width:thin}.timeline{min-width:1000px}.job-marker{margin-bottom:12px}.job-tooltip{position:static;display:none;width:fit-content;max-width:100%;margin:7px 0 0;background:rgba(217,119,50,.08);box-shadow:none;transform:none;visibility:visible;opacity:1}.job-marker:hover .job-tooltip,.job-marker:focus-within .job-tooltip{display:inline-flex;transform:none}}
 </style>
 <style>
-.header-actions{display:flex;align-items:center;gap:8px}.language-switch{display:flex;align-items:center;gap:3px}.language-button{display:inline-flex;align-items:center;justify-content:center;gap:3px;min-width:38px;min-height:38px;padding:0 6px;border:1px solid var(--line);border-radius:3px;background:rgba(255,255,255,.045);color:var(--white);font-size:12px;cursor:pointer;transition:border-color .2s ease,background .2s ease}.language-button:hover,.language-button[aria-pressed="true"]{border-color:var(--accent-bright);background:rgba(217,119,50,.13)}.language-code{font-size:9px;font-weight:750;letter-spacing:.04em}
-@media(max-width:760px){.header-actions{gap:5px}.language-button{min-width:34px;min-height:34px;padding:0 4px}.language-code{display:none}}
-@media(max-width:420px){.nav{gap:5px}.brand{font-size:11px}.header-actions{gap:4px}.cv-link{padding:0 8px;font-size:7px}.language-switch{gap:2px}.language-button{min-width:30px;min-height:32px;padding:0 3px}}
+.header-actions{display:flex;align-items:center;gap:8px}.language-picker{position:relative}.language-toggle{display:block}.language-options{position:absolute;z-index:11;top:calc(100% + 10px);right:0;width:190px;padding:6px;border:1px solid var(--line);border-radius:4px;background:rgba(17,17,17,.97);box-shadow:0 18px 40px rgba(0,0,0,.45);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}.language-options[hidden]{display:none}.language-option{display:flex;width:100%;align-items:center;gap:10px;padding:10px 12px;border:0;border-radius:3px;background:transparent;color:var(--white);font-size:12px;text-align:left;cursor:pointer}.language-option:hover,.language-option[aria-pressed="true"]{background:rgba(217,119,50,.14);color:var(--accent-bright)}.language-option span:first-child{font-size:16px}
+@media(max-width:760px){.header-actions{gap:5px}.language-toggle{padding:9px 10px;font-size:9px}}
+@media(max-width:420px){.nav{gap:4px}.brand{font-size:10px;letter-spacing:.06em}.header-actions{gap:4px}.cv-link{padding:0 7px;font-size:7px}.language-toggle,.menu{padding:9px 8px;font-size:9px;letter-spacing:.05em}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#inicio">DÁRIO POMA <span>RAMIREZ</span></a><div class="header-actions"><a class="cv-link" href="Dario-Poma-Ramirez-CV.pdf" target="_blank" rel="noopener" aria-label="Visualizar currículo em PDF, abre em nova aba">Visualizar CV</a><div class="language-switch" role="group" aria-label="Selecionar idioma"><button class="language-button" type="button" data-language="pt-BR" aria-label="Português do Brasil" aria-pressed="true"><span aria-hidden="true">🇧🇷</span><span class="language-code">PT</span></button><button class="language-button" type="button" data-language="en-US" aria-label="American English" aria-pressed="false"><span aria-hidden="true">🇺🇸</span><span class="language-code">EN</span></button></div></div><nav id="nav"><a href="#trabalhos">Trabalhos</a><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#competencias">Competências</a><a href="#contato">Contato</a></nav><button class="menu" id="menu" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">MENU</button></div></header>
+<header><div class="wrap nav"><a class="brand" href="#inicio">DÁRIO POMA <span>RAMIREZ</span></a><div class="header-actions"><a class="cv-link" href="Dario-Poma-Ramirez-CV.pdf" target="_blank" rel="noopener" aria-label="Visualizar currículo em PDF, abre em nova aba">Visualizar CV</a><div class="language-picker"><button class="menu language-toggle" id="language-toggle" type="button" aria-controls="language-options" aria-expanded="false">IDIOMA</button><div class="language-options" id="language-options" role="group" aria-label="Selecionar idioma" hidden><button class="language-option" type="button" data-language="pt-BR" aria-pressed="true"><span aria-hidden="true">🇧🇷</span><span data-language-name>Português</span></button><button class="language-option" type="button" data-language="en-US" aria-pressed="false"><span aria-hidden="true">🇺🇸</span><span data-language-name>Inglês</span></button><button class="language-option" type="button" data-language="es-ES" aria-pressed="false"><span aria-hidden="true">🇪🇸</span><span data-language-name>Espanhol</span></button></div></div></div><nav id="nav"><a href="#trabalhos">Trabalhos</a><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#competencias">Competências</a><a href="#contato">Contato</a></nav><button class="menu" id="menu" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">MENU</button></div></header>
 <main>
 <section class="hero" id="inicio"><div class="wrap"><div class="kicker">Portfólio profissional · 2026</div><h1>IMAGENS QUE<br><em>CONTAM</em> HISTÓRIAS.</h1><p class="balanced-copy"><span>Motion Designer &amp; Produtor Audiovisual.</span><span>Transformo ideias em experiências visuais por meio de design, movimento e narrativa audiovisual.</span></p><div class="hero-actions"><a class="btn primary" href="#trabalhos">Explorar projetos &#x2198;&#xFE0E;</a><a class="btn" href="mailto:dariod2rpoma@gmail.com">Entrar em Contato</a></div></div><div class="hero-index">MOTION DESIGN · AUDIOVISUAL · DESIGN</div></section>
 
@@ -205,6 +205,111 @@ const portfolioTranslations={
 "Enviar e-mail":"Send an Email",
 "Motion Designer & Produtor Audiovisual · São Paulo, SP":"Motion Designer & Audiovisual Producer · São Paulo, Brazil"
 };
+const portfolioSpanishTranslations={
+"Visualizar CV":"Ver currículum",
+"Trabalhos":"Proyectos",
+"Sobre":"Sobre mí",
+"Experiência":"Experiencia",
+"Competências":"Habilidades",
+"Contato":"Contacto",
+"Portfólio profissional · 2026":"Portafolio profesional · 2026",
+"IMAGENS QUE":"IMÁGENES QUE",
+"CONTAM":"CUENTAN",
+"HISTÓRIAS.":"HISTORIAS.",
+"Motion Designer & Produtor Audiovisual.":"Motion Designer y productor audiovisual.",
+"Transformo ideias em experiências visuais por meio de design, movimento e narrativa audiovisual.":"Transformo ideas en experiencias visuales mediante el diseño, el movimiento y la narrativa audiovisual.",
+"Explorar projetos":"Explorar proyectos",
+"Entrar em Contato":"Contactar",
+"MOTION DESIGN · AUDIOVISUAL · DESIGN":"MOTION DESIGN · AUDIOVISUAL · DISEÑO",
+"01 / Seleção de projetos":"01 / Proyectos destacados",
+"Seleção de projetos":"Proyectos destacados",
+"TRABALHOS":"PROYECTOS",
+"EM DESTAQUE.":"DESTACADOS.",
+"Uma seleção de produções audiovisuais,":"Una selección de producciones audiovisuales,",
+"conteúdos digitais e projetos criativos.":"contenidos digitales y proyectos creativos.",
+"Link de Cases":"Ver casos",
+"Produção audiovisual":"Producción audiovisual",
+"Assistir no YouTube":"Ver en YouTube",
+"Motion & conteúdo digital":"Motion y contenido digital",
+"Ver publicação":"Ver publicación",
+"Conteúdo audiovisual":"Contenido audiovisual",
+"Assistir":"Ver",
+"Perfil profissional":"Perfil profesional",
+"02 / Perfil profissional":"02 / Perfil profesional",
+"CRIATIVIDADE":"CREATIVIDAD",
+"COM PROPÓSITO.":"CON PROPÓSITO.",
+"Profissional criativo multidisciplinar com trajetória em design gráfico, motion design e produção audiovisual.":"Profesional creativo multidisciplinario con trayectoria en diseño gráfico, motion design y producción audiovisual.",
+"Experiência no desenvolvimento de campanhas publicitárias, conteúdos digitais, cobertura de eventos e produções para diferentes marcas e plataformas.":"Experiencia en el desarrollo de campañas publicitarias, contenidos digitales, cobertura de eventos y producciones para distintas marcas y plataformas.",
+"Atuação em todas as etapas da produção audiovisual, da concepção e roteirização à captação, edição e finalização, integrando técnica, narrativa e identidade visual.":"Participo en todas las etapas de la producción audiovisual, desde la conceptualización y el guion hasta la grabación, edición y entrega final, integrando técnica, narrativa e identidad visual.",
+"Trajetória profissional":"Trayectoria profesional",
+"Da ideia à finalização":"De la idea al resultado final",
+"Trajetória":"Trayectoria",
+"03 / Trajetória":"03 / Trayectoria",
+"EXPERIÊNCIA":"EXPERIENCIA",
+"PROFISSIONAL.":"PROFESIONAL.",
+"Experiências em criação, comunicação,":"Experiencia en creación, comunicación,",
+"produção audiovisual e educação criativa.":"producción audiovisual y educación creativa.",
+"Professor de Design Gráfico e Desenvolvimento de Jogos":"Profesor de diseño gráfico y desarrollo de videojuegos",
+"Ensino de design gráfico e desenvolvimento de jogos em ambientes 2D e 3D, com orientação prática sobre ferramentas criativas e produção digital.":"Enseñé diseño gráfico y desarrollo de videojuegos en entornos 2D y 3D, con orientación práctica sobre herramientas creativas y producción digital.",
+"Designer Gráfico & Social Media":"Diseñador gráfico y especialista en redes sociales",
+"Desenvolvimento de peças gráficas, conteúdos digitais, materiais institucionais e publicações para redes sociais.":"Creación de piezas gráficas, contenidos digitales, materiales institucionales y publicaciones para redes sociales.",
+"Produtor & Cinegrafista":"Productor y camarógrafo",
+"Captação, operação e produção audiovisual para transmissões ao vivo e conteúdos jornalísticos.":"Grabación, operación y producción audiovisual para transmisiones en vivo y contenidos periodísticos.",
+"Edição, sonorização, podcasts e conteúdos digitais.":"Edición, sonido, pódcast y contenidos digitales.",
+"Produção audiovisual freelance":"Producción audiovisual independiente",
+"Produção Audiovisual Freelance":"Producción audiovisual independiente",
+"Projetos para Audi Morumbi, Flávia Lombard, Dunguinhas Burguer e Auto Escola Star Fox.":"Proyectos para Audi Morumbi, Flávia Lombard, Dunguinhas Burguer y Auto Escola Star Fox.",
+"Planejamento, captação, direção, edição e finalização de conteúdos comerciais e institucionais, incluindo gravações externas e drone.":"Planificación, grabación, dirección, edición y entrega de contenidos comerciales e institucionales, incluidas grabaciones en exteriores y con dron.",
+"Motion Designer":"Motion Designer",
+"Desenvolvimento de criativos estáticos e animados para campanhas publicitárias, redes sociais e mídia paga.":"Creación de piezas estáticas y animadas para campañas publicitarias, redes sociales y medios pagados.",
+"Produção de vídeos, animações, apresentações e materiais institucionais.":"Producción de videos, animaciones, presentaciones y materiales institucionales.",
+"Especialidades":"Especialidades",
+"04 / Especialidades":"04 / Especialidades",
+"COMPETÊNCIAS":"HABILIDADES",
+"& FERRAMENTAS.":"Y HERRAMIENTAS.",
+"Recursos criativos e técnicos aplicados":"Recursos creativos y técnicos aplicados",
+"a diferentes formatos e objetivos de comunicação.":"a distintos formatos y objetivos de comunicación.",
+"Design & Motion":"Diseño y Motion",
+"Design gráfico · Motion design · Identidade visual ·":"Diseño gráfico · Motion design · Identidad visual ·",
+"Animação · Peças publicitárias.":"Animación · Piezas publicitarias.",
+"Produção Audiovisual":"Producción audiovisual",
+"Roteirização · Captação de imagens · Direção ·":"Guion · Grabación · Dirección ·",
+"Edição de vídeo · Sonorização · Transmissões ao vivo ·":"Edición de video · Sonido · Transmisiones en vivo ·",
+"Captação com drone · Otimização via IA.":"Grabación con dron · Optimización con IA.",
+"Produção Multiplataforma":"Producción multiplataforma",
+"Campanhas digitais, conteúdos para redes sociais,":"Campañas digitales, contenidos para redes sociales,",
+"mídia paga, materiais institucionais":"medios pagados, materiales institucionales",
+"e comunicação de marca.":"y comunicación de marca.",
+"Formação":"Formación",
+"05 / Formação":"05 / Formación",
+"FORMAÇÃO &":"FORMACIÓN Y",
+"CAPACITAÇÃO.":"CAPACITACIÓN.",
+"Estudos e cursos que compõem minha trajetória":"Estudios y cursos que forman parte de mi trayectoria",
+"profissional e criativa.":"profesional y creativa.",
+"Produção Audiovisual — Porta dos Fundos":"Producción audiovisual — Porta dos Fundos",
+"2026 · Roteirização, direção, fotografia e edição.":"2026 · Guion, dirección, fotografía y edición.",
+"Bacharelado em Teologia — ITEPA Bible College":"Licenciatura en Teología — ITEPA Bible College",
+"2023 — 2026 · 27 módulos informados no currículo.":"2023 — 2026 · 27 módulos indicados en mi currículum.",
+"Jogos Digitais — FMU":"Videojuegos — FMU",
+"2018 — 2020 · Roteiro, Unity, C#, HTML, CSS e Java.":"2018 — 2020 · Guion, Unity, C#, HTML, CSS y Java.",
+"Edição e Pós-Produção Audiovisual — Cursos Livres":"Edición y posproducción audiovisual — Cursos libres",
+"2016 — 2019 · After Effects, Premiere Pro e Audition.":"2016 — 2019 · After Effects, Premiere Pro y Audition.",
+"Desenvolvimento de Jogos — Microcamp":"Desarrollo de videojuegos — Microcamp",
+"2015 — 2017 · Unreal Engine, Maya, 2D e 3D.":"2015 — 2017 · Unreal Engine, Maya, 2D y 3D.",
+"Idiomas":"Idiomas",
+"06 / Contato":"06 / Contacto",
+"Inglês intermediário.":"Inglés intermedio.",
+"SEU PRÓXIMO PROJETO":"TU PRÓXIMO PROYECTO",
+"COMEÇA AQUI!":"¡EMPIEZA AQUÍ!",
+"Disponível para projetos, parcerias e novas oportunidades em design, motion e produção audiovisual.":"Disponible para proyectos, colaboraciones y nuevas oportunidades en diseño, motion y producción audiovisual.",
+"Enviar e-mail":"Enviar correo",
+"Motion Designer & Produtor Audiovisual · São Paulo, SP":"Motion Designer y productor audiovisual · São Paulo, Brasil"
+};
+const portfolioLanguageNames={
+"pt-BR":["Português","Inglês","Espanhol"],
+"en-US":["Portuguese","English","Spanish"],
+"es-ES":["Portugués","Inglés","Español"]
+};
 const portfolioAttributeTranslations={
 "aria-label":{
 "Visualizar currículo em PDF, abre em nova aba":"View résumé as a PDF; opens in a new tab",
@@ -226,7 +331,29 @@ const portfolioAttributeTranslations={
 "AMIG — vídeo 01":"AMIG — Video 1"
 }
 };
-const portfolioLanguageButtons=document.querySelectorAll('.language-button');
+const portfolioSpanishAttributeTranslations={
+"aria-label":{
+"Visualizar currículo em PDF, abre em nova aba":"Ver currículum en PDF; se abre en una pestaña nueva",
+"Selecionar idioma":"Seleccionar idioma",
+"Abrir menu":"Abrir menú",
+"Link de Cases da Control F5 (abre em nova aba)":"Enlace a los casos de Control F5 (se abre en una pestaña nueva)",
+"Experiência profissional em ordem cronológica":"Experiencia profesional en orden cronológico",
+"Cargo: Professor de Design Gráfico e Desenvolvimento de Jogos":"Puesto: Profesor de diseño gráfico y desarrollo de videojuegos",
+"Cargo: Designer Gráfico e Social Media":"Puesto: Diseñador gráfico y especialista en redes sociales",
+"Cargo: Produtor e Cinegrafista":"Puesto: Productor y camarógrafo",
+"Cargo: Produção audiovisual freelance":"Puesto: Productor audiovisual independiente",
+"Cargo: Motion Designer":"Puesto: Motion Designer"
+},
+"title":{
+"Audi — vídeo 01":"Audi — Video 1",
+"Audi — vídeo 02":"Audi — Video 2",
+"Control F5 — vídeo 01 em destaque":"Control F5 — Video destacado 1",
+"AMIG — vídeo 01":"AMIG — Video 1"
+}
+};
+const portfolioLanguageButtons=document.querySelectorAll('.language-option');
+const languageToggle=document.getElementById('language-toggle');
+const languageOptions=document.getElementById('language-options');
 const portfolioTextNodes=[];
 const portfolioTextWalker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
 while(portfolioTextWalker.nextNode())portfolioTextNodes.push({node:portfolioTextWalker.currentNode,original:portfolioTextWalker.currentNode.nodeValue});
@@ -238,29 +365,52 @@ if(element.hasAttribute(attribute))portfolioAttributes.push({element,attribute,o
 });
 const portfolioArrow=/\s*[↗↘](?:\uFE0E)?$/;
 function setPortfolioLanguage(language){
-const english=language==='en-US';
+const translations=language==='en-US'?portfolioTranslations:language==='es-ES'?portfolioSpanishTranslations:null;
 document.documentElement.lang=language;
-document.title=english?'Dário Poma Ramirez — Motion Designer & Audiovisual Producer':'Dário Poma Ramirez — Motion Designer & Produtor Audiovisual';
-document.querySelector('meta[name="description"]').content=english?'Portfolio of Dário Poma Ramirez — Motion Designer and Audiovisual Producer.':'Portfólio de Dário Poma Ramirez — Motion Designer e Produtor Audiovisual.';
+document.title=language==='en-US'?'Dário Poma Ramirez — Motion Designer & Audiovisual Producer':language==='es-ES'?'Dário Poma Ramirez — Motion Designer y Productor Audiovisual':'Dário Poma Ramirez — Motion Designer & Produtor Audiovisual';
+document.querySelector('meta[name="description"]').content=language==='en-US'?'Portfolio of Dário Poma Ramirez — Motion Designer and Audiovisual Producer.':language==='es-ES'?'Portafolio de Dário Poma Ramirez — Motion Designer y productor audiovisual.':'Portfólio de Dário Poma Ramirez — Motion Designer e Produtor Audiovisual.';
 portfolioTextNodes.forEach(({node,original})=>{
 const trimmed=original.trim();
-if(!english){node.nodeValue=original;return;}
 const arrow=trimmed.match(portfolioArrow)?.[0]||'';
 const key=arrow?trimmed.slice(0,-arrow.length).trim():trimmed;
-const translated=portfolioTranslations[key];
+const translated=translations?.[key];
 if(translated)node.nodeValue=original.replace(trimmed,translated+(arrow?' '+arrow.trim():''));
+else node.nodeValue=original;
 });
 portfolioAttributes.forEach(({element,attribute,original})=>{
-const translated=english?portfolioAttributeTranslations[attribute]?.[original]:null;
+const translated=language==='en-US'?portfolioAttributeTranslations[attribute]?.[original]:language==='es-ES'?portfolioSpanishAttributeTranslations[attribute]?.[original]:null;
 element.setAttribute(attribute,translated||original);
 });
 portfolioLanguageButtons.forEach(button=>{
 button.setAttribute('aria-pressed',String(button.dataset.language===language));
+button.querySelector('[data-language-name]').textContent=portfolioLanguageNames[language][['pt-BR','en-US','es-ES'].indexOf(button.dataset.language)];
 });
-localStorage.setItem('portfolio-language',language);
+languageToggle.textContent=language==='en-US'?'LANGUAGE':'IDIOMA';
 }
-portfolioLanguageButtons.forEach(button=>button.addEventListener('click',()=>setPortfolioLanguage(button.dataset.language)));
-setPortfolioLanguage(localStorage.getItem('portfolio-language')==='en-US'?'en-US':'pt-BR');
+function setLanguageMenuOpen(isOpen){
+languageToggle.setAttribute('aria-expanded',String(isOpen));
+languageOptions.hidden=!isOpen;
+}
+portfolioLanguageButtons.forEach(button=>button.addEventListener('click',()=>{
+setPortfolioLanguage(button.dataset.language);
+localStorage.setItem('portfolio-language',button.dataset.language);
+setLanguageMenuOpen(false);
+}));
+languageToggle.addEventListener('click',()=>setLanguageMenuOpen(languageToggle.getAttribute('aria-expanded')!=='true'));
+document.addEventListener('click',event=>{
+if(!event.target.closest('.language-picker'))setLanguageMenuOpen(false);
+});
+document.addEventListener('keydown',event=>{
+if(event.key==='Escape')setLanguageMenuOpen(false);
+});
+const savedPortfolioLanguage=localStorage.getItem('portfolio-language');
+const supportedPortfolioLanguages=['pt-BR','en-US','es-ES'];
+const browserLanguages=navigator.languages?.length?navigator.languages:[navigator.language];
+const detectedPortfolioLanguage=browserLanguages.map(language=>{
+const baseLanguage=language.toLowerCase().split('-')[0];
+return baseLanguage==='pt'?'pt-BR':baseLanguage==='en'?'en-US':baseLanguage==='es'?'es-ES':null;
+}).find(language=>language!==null)||'pt-BR';
+setPortfolioLanguage(supportedPortfolioLanguages.includes(savedPortfolioLanguage)?savedPortfolioLanguage:detectedPortfolioLanguage);
 </script>
 <script>
 const menu=document.getElementById('menu'),nav=document.getElementById('nav');
